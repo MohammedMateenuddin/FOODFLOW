@@ -1,16 +1,16 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
-import Image from "next/image";
+
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
-import { Loader2, Sparkles, CheckCircle2, AlertTriangle, ShieldCheck, ArrowRight, ArrowLeft, Thermometer } from "lucide-react";
+import { Loader2, Sparkles,  ArrowRight, ArrowLeft, Thermometer } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { calculateFreshness, FreshnessResult } from "@/lib/verification";
-import { FOOD_CATEGORIES, FOOD_ROUTING_MATRIX } from "@/lib/food-categorizer";
+import { FOOD_CATEGORIES,  } from "@/lib/food-categorizer";
 import { useProfile } from "@/lib/hooks/useProfile";
 import confetti from "canvas-confetti";
 import { sounds } from "@/lib/sounds";

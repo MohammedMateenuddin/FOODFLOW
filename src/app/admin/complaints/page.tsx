@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Shield, CheckCircle, Search, AlertTriangle, XCircle } from "lucide-react";
+import { Shield, CheckCircle, Search,  } from "lucide-react";
 import { supabase } from "@/lib/supabase";
-import { getTrustLevel, ISSUE_TYPES } from "@/lib/trust-engine";
+import {  ISSUE_TYPES } from "@/lib/trust-engine";
 import TrustBadge from "@/components/TrustBadge";
 import { toast } from "sonner";
 

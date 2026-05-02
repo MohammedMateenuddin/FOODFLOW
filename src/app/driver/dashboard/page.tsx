@@ -119,7 +119,6 @@ export default function DriverDashboard() {
     : 100;
 
   const mealsRescued = driver ? driver.total_deliveries * 12 : 0;
-  const co2Saved = (mealsRescued * 2.5) / 1000;
 
   return (
     <div className="min-h-screen bg-[#08090A] pt-20 pb-20 px-4 md:px-6">

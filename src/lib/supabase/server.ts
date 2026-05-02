@@ -14,7 +14,7 @@ export function createClient() {
         set(name: string, value: string, options: any) {
           try {
             cookieStore.set({ name, value, ...options })
-          } catch (_error) {
+          } catch {
             // The `set` method was called from a Server Component.
             // This can be ignored if you have middleware refreshing
             // user sessions.
@@ -23,7 +23,7 @@ export function createClient() {
         remove(name: string, options: any) {
           try {
             cookieStore.set({ name, value: '', ...options })
-          } catch (_error) {
+          } catch {
             // The `remove` method was called from a Server Component.
             // This can be ignored if you have middleware refreshing
             // user sessions.

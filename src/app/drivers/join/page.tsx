@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Truck, Trophy, Globe, Award, ChevronRight } from "lucide-react";
+import { Truck, Trophy,  ChevronRight } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { BADGE_LEVELS } from "@/lib/driver-matcher";
 

@@ -169,7 +169,7 @@ export default function MapPage() {
 
   const filteredListings = listings.filter(l => filter === "all" || l.status === filter);
   const activeCount = listings.filter(l => l.status === "available").length;
-  const pendingCount = listings.filter(l => l.status === "matched").length;
+  const _pendingCount = listings.filter(l => l.status === "matched").length;
 
   return (
     <div className="bg-[#08090A] text-[#e3e2e3] h-screen overflow-hidden flex flex-col font-sans pt-20">

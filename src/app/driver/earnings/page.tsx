@@ -6,7 +6,7 @@ import { useProfile } from "@/lib/hooks/useProfile";
 
 export default function DriverEarnings() {
   const { profile } = useProfile();
-  const [loading, setLoading] = useState(true);
+  const [_loading, setLoading] = useState(true);
   const [driver, setDriver] = useState<any>(null);
 
   useEffect(() => {

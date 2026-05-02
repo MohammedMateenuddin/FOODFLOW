@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FileText, CheckCircle, Sparkles, ArrowRight, Building2, BarChart3, Download } from "lucide-react";
+import { FileText, CheckCircle, Sparkles, ArrowRight, Building2,  } from "lucide-react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 

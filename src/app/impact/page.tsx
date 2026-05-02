@@ -8,8 +8,7 @@ import {
   Zap, 
   Search, 
   Filter, 
-  Bell, 
-  Settings,
+  
   Recycle,
   Leaf
 } from "lucide-react";
@@ -59,8 +58,8 @@ export default function ImpactPage() {
   const [totalCo2, setTotalCo2] = useState(12.4);
   const [activeDonors, setActiveDonors] = useState(842);
   const [valorizedKg, setValorizedKg] = useState(12540);
-  const [energyKwh, setEnergyKwh] = useState(4200);
-  const [compostKg, setCompostKg] = useState(3200);
+  const [energyKwh] = useState(4200);
+  const [compostKg] = useState(3200);
 
   const fetchImpact = async () => {
     // In a real app, this would aggregate data from the listings table

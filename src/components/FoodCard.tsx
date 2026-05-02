@@ -2,12 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { UtensilsCrossed, Package, Clock } from "lucide-react";
+import { UtensilsCrossed, Package,  } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import ExpiryTimer from "@/components/ExpiryTimer";
 import { Listing } from "@/lib/types";
-import { cn } from "@/lib/utils";
+import {  } from "@/lib/utils";
 
 interface FoodCardProps {
   listing: Listing;

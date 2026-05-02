@@ -89,7 +89,7 @@ export default function PickupPage() {
       } else {
         toast.error("Rerouting failed: " + (data.error || "Unknown error"));
       }
-    } catch (err) {
+    } catch (_err) {
       toast.error("Rerouting failed");
     }
     setRerouting(false);

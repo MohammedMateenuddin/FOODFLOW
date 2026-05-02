@@ -15,7 +15,7 @@ export default function TestPage() {
       
       // Test 1: Basic connection
       try {
-        const { data, error } = await supabase.from('profiles').select('count')
+        const { error } = await supabase.from('profiles').select('count')
         results.connection = error ? `❌ ${error.message}` : '✅ Connected'
       } catch (e: any) {
         results.connection = `❌ ${e.message}`
@@ -163,12 +163,6 @@ export default function TestPage() {
 
     return () => { supabase.removeChannel(channel) }
   }, [])
-
-  const getIcon = (val: string) => {
-    if (val.startsWith('✅')) return '🟢'
-    if (val.startsWith('⚠️')) return '🟡'
-    return '🔴'
-  }
 
   return (
     <div style={{ padding: 32, fontFamily: 'monospace', background: '#0a0a0a', 

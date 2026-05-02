@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Battery, Wheat, Factory, CheckCircle2, ChevronRight, Zap, TrendingUp, Sparkles, Send } from "lucide-react";
+import { Battery, Wheat, Factory, CheckCircle2,  Sparkles, Send } from "lucide-react";
 
 export default function PartnerValorizationPage() {
   const [formState, setFormState] = useState({

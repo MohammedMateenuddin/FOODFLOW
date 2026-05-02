@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase/client";
 import { motion } from "framer-motion";
-import { Bell, Shield, Moon, Globe, Trash2, Loader2, Check, ChevronRight, LogOut } from "lucide-react";
+import { Bell, Shield,  Trash2, Loader2, Check, ChevronRight, LogOut } from "lucide-react";
 import { toast } from "sonner";
 
 export default function SettingsPage() {

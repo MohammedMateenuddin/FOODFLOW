@@ -53,7 +53,7 @@ export default function ZeroWastePage() {
   }, []);
 
   const totalDiverted = logs.reduce((sum, log) => sum + log.quantity_kg, 0) + 12540;
-  const totalCo2 = logs.reduce((sum, log) => sum + log.co2_avoided, 0) + 31350;
+  const _totalCo2 = logs.reduce((sum, log) => sum + log.co2_avoided, 0) + 31350;
 
   const energyKwh = logs.filter(l => l.partner_type === 'biogas').reduce((sum, l) => sum + (l.quantity_kg * 0.5), 0) + 4200;
   const cattleFeed = logs.filter(l => l.partner_type === 'cattle_feed').reduce((sum, l) => sum + (l.quantity_kg * 0.9), 0) + 8500;

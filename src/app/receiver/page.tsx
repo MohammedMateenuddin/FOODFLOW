@@ -8,14 +8,22 @@ import { supabase } from "@/lib/supabase";
 import { Listing } from "@/lib/types";
 import { toast } from "sonner";
 import { useProfile } from "@/lib/hooks/useProfile";
-import Lottie from "lottie-react";
 
 /* ─── Skeletons & Lottie Data ─── */
-import emptyBowlData from "@/lib/lottie/empty-bowl.json"; // We'll mock this for now, but user should add real Lottie JSON
 
-const fadeUp = {
+import type { Variants } from 'framer-motion';
+
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
-  visible: (d: number) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: d, ease: [0.25, 0.4, 0.25, 1] } }),
+  visible: (d: number = 0) => ({ 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.5, 
+      delay: d * 0.1, 
+      ease: 'easeOut' as const 
+    } 
+  }),
 };
 
 function ListingCardSkeleton() {
