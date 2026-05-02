@@ -83,7 +83,13 @@ export async function GET(request: Request) {
 
   // Existing user — check onboarding status
   if (!profile.is_onboarded) {
+    // Override the default trigger role with the actual intended role
+    if (profile.role !== intendedRole) {
+      await supabase.from('profiles').update({ role: intendedRole }).eq('id', user.id)
+    }
+
     const onboardingUrl = new URL('/onboarding', origin)
+    onboardingUrl.searchParams.set('role', intendedRole)
     const redirectResponse = NextResponse.redirect(onboardingUrl)
     supabaseResponse.cookies.getAll().forEach(c => {
       redirectResponse.cookies.set(c.name, c.value)
