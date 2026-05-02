@@ -11,7 +11,7 @@ export async function GET(request: Request) {
     return NextResponse.redirect(new URL('/login?error=no_code', origin))
   }
 
-  let supabaseResponse = NextResponse.redirect(new URL(next, origin))
+  const supabaseResponse = NextResponse.redirect(new URL(next, origin))
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
