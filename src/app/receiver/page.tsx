@@ -145,7 +145,7 @@ export default function ReceiverPage() {
       if (sortBy === "Nearest") {
         return parseFloat(getDistance(a.id)) - parseFloat(getDistance(b.id));
       } else {
-        const timeDiff = new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
+        const timeDiff = new Date(b.created_at || 0).getTime() - new Date(a.created_at || 0).getTime();
         // If times are identical (like from bulk seeding), sort by quantity to guarantee a visual change
         return timeDiff !== 0 ? timeDiff : b.quantity_kg - a.quantity_kg;
       }
