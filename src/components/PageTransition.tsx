@@ -14,18 +14,15 @@ export default function PageTransition({ children }: { children: React.ReactNode
   const pathname = usePathname();
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={pathname}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        variants={variants}
-        transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
-        className="w-full h-full flex flex-col flex-1"
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={pathname}
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
+      className="w-full h-full flex flex-col flex-1"
+    >
+      {children}
+    </motion.div>
   );
 }
