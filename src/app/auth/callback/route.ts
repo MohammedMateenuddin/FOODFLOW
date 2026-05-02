@@ -61,7 +61,6 @@ export async function GET(request: Request) {
     const { error: insertError } = await supabase.from('profiles').upsert({
       id: user.id,
       full_name: fullName,
-      email: user.email,
       role: intendedRole,
       is_onboarded: false,
       avatar_url: user.user_metadata?.avatar_url ?? null,
