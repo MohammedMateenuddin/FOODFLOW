@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="https://raw.githubusercontent.com/MohammedMateenuddin/FOODFLOW/master/public/default-avatar.png" alt="FoodFlow Logo" width="100" height="100" />
+  <h1>FoodFlow</h1>
+  <p><strong>Save Food. Feed Hope.</strong></p>
+  <p>The intelligent logistics backbone connecting restaurant surplus with NGOs in real-time. Eliminating waste, one meal at a time.</p>
+  
+  [![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://foodflow-fawn.vercel.app)
+  [![Built with Next.js](https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+  [![Powered by Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com/)
+  [![Styled with Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+</div>
 
-## Getting Started
+<br />
 
-First, run the development server:
+## 🌍 Live Demo
+**👉 [https://foodflow-fawn.vercel.app](https://foodflow-fawn.vercel.app)**
 
+## 📖 About The Project
+
+Food waste and food insecurity are massive global challenges. FoodFlow bridges this gap by acting as a real-time, smart logistics engine. It instantly connects businesses with surplus food (like restaurants, hotels, and grocery stores) to the NGOs, orphanages, and shelters that need it most, while coordinating drivers for immediate pickup and delivery.
+
+### 🌟 Key Features
+
+*   **⚡ Real-Time Matching Algorithm**: Instantly pairs food donations with the nearest NGOs that have the capacity to accept them.
+*   **🚗 Smart Driver Routing**: Automatically alerts and assigns drivers based on proximity and vehicle capacity.
+*   **♻️ Zero-Waste Valorization Engine**: If food is no longer fit for human consumption, the system automatically redirects it to composting facilities, biogas plants, or animal farms.
+*   **📊 Corporate Social Responsibility (CSR) Dashboard**: Generates automated impact reports tracking CO2 emissions saved, meals delivered, and water footprint reduced for corporate donors.
+*   **🔐 Seamless Authentication**: Role-based access control (Donor, Receiver, Driver, Admin, Valorization Partner) using Google OAuth and Supabase Auth.
+*   **📡 Live Tracking**: Interactive maps and realtime database updates for live order tracking and logistics.
+
+## 🛠️ Technology Stack
+
+*   **Frontend**: Next.js 14 (App Router), React, Tailwind CSS, Framer Motion
+*   **Backend / Database**: Supabase (PostgreSQL), Supabase Realtime, Supabase Auth
+*   **UI Components**: Lucide React (Icons), Lottie-React (Animations)
+*   **Deployment**: Vercel
+
+## 🚀 Getting Started Locally
+
+To run this project on your local machine:
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/MohammedMateenuddin/FOODFLOW.git
+cd foodflow
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Setup Environment Variables
+Create a `.env.local` file in the root directory and add your Supabase credentials:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Learn More
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+This project is licensed under the MIT License.
