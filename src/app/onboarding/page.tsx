@@ -46,13 +46,13 @@ export default function OnboardingPage() {
 
         if (profile?.is_onboarded) {
           // Already onboarded, send to dashboard
-          const dest = {
+          const dest = ({
             donor: '/donate',
             ngo: '/receiver',
             driver: '/driver/dashboard',
             valorization_partner: '/partners/dashboard/me',
             admin: '/admin',
-          }[profile.role] || '/';
+          } as Record<string, string>)[profile.role] || '/';
           window.location.href = dest;
           return;
         }
