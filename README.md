@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MohammedMateenuddin/FOODFLOW/master/public/default-avatar.png" alt="FoodFlow Logo" width="100" height="100" />
+  <img src="https://raw.githubusercontent.com/MohammedMateenuddin/FOODFLOW/master/public/logo.png" alt="FoodFlow Logo" width="100" height="100" />
   <h1>FoodFlow</h1>
   <p><strong>Save Food. Feed Hope.</strong></p>
   <p>The intelligent logistics backbone connecting restaurant surplus with NGOs in real-time. Eliminating waste, one meal at a time.</p>
